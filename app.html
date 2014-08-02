@@ -4,12 +4,12 @@
   <title>SportsStore</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
-
   <script>
-  angular.module("sportsStore", []);
+    angular.module("sportsStore", []);
   </script>
+  <script src="controllers/sportsStore.js"></script>
 </head>
-<body>
+<body ng-controller="sportsStoreCtrl">
   <div class="navbar navbar-inverse">
     <a class="navbar-brand" href="#">Sports Store</a>
   </div>
@@ -18,7 +18,15 @@
       Categories
     </div>
     <div class="col-xs-8">
-      Products
+        <div class="well" ng-repeat="item in data.products">
+          <h3>
+              <strong>{{item.name}}</strong>
+              <span class="pull-right label label-primary">
+                {{item.price | currency}}
+              </span>
+          </h3>
+          <span class="lead">{{item.description}}</span>
+        </div>
     </div>
   </div>
 </body>
