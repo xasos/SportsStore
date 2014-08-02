@@ -5,9 +5,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
   <script>
-    angular.module("sportsStore", []);
+    angular.module("sportsStore", ["customFilters"]);
   </script>
   <script src="controllers/sportsStore.js"></script>
+  <script src="filters/customFilters.js"></script>
 </head>
 <body ng-controller="sportsStoreCtrl">
   <div class="navbar navbar-inverse">
