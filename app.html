@@ -25,7 +25,7 @@
       </a>
     </div>
     <div class="col-xs-8">
-        <div class="well" ng-repeat="item in data.products | filter:CategoryFilterFn">
+        <div class="well" ng-repeat="item in data.products | filter:CategoryFilterFn | range:selectedPage:pageSize">
           <h3>
               <strong>{{item.name}}</strong>
               <span class="pull-right label label-primary">
@@ -34,6 +34,12 @@
           </h3>
           <span class="lead">{{item.description}}</span>
         </div>
+        <div class="pull-right btn-group">
+          <a ng-repeat="page in data.products | filter: categoryFilterFn | pageCount:pageSize"
+          ng-click="selectPage($index + 1)" class="btn btn-default"
+          ng-class="getPageClass($index +1)">
+        </a>
+      </div>
     </div>
   </div>
 </body>
