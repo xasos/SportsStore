@@ -2,3 +2,16 @@ SportsStore
 ===========
 
 Sample Sports Store Application written in AngularJS.
+
+## Running the application
+
+### Running Deployd
+This application uses deployd to provide a simple API to display product data on a localhost.
+```sh
+dpd -p 5500 deployd\app.dpd
+dashboard
+```
+### Starting web server
+```sh
+node server.js
+```
