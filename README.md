@@ -1,7 +1,7 @@
 SportsStore
 ===========
 
-Sample Sports Store Application written in AngularJS.
+Sample sports store web app written in AngularJS and Deployd.
 
 ## Running the application
 
