@@ -8,6 +8,7 @@ angular.module("sportsStore")
     $scope.data.products = data;
   })
   .error(function(error) {
+    console.log("Not connected to Deployd.")
     $scope.data.error = error;
   });
 });
