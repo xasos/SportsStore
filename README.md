@@ -11,7 +11,7 @@ This application uses deployd to provide a simple API to feed product data on a 
 dpd -p 5500 "deployd\app.dpd"
 dashboard
 ```
-### Starting web server
-```sh
-node server.js
+### Starting site
+```
+Navigate to http://localhost:5500/app.html
 ```
