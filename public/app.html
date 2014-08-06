@@ -6,7 +6,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
     <script>
         angular.module("sportsStore", ["customFilters", "cart", "ngRoute"])
-        .config(function ($routeprovider) {
+        .config(function ($routeProvider) {
 
             $routeProvider.when("/checkout", {
                 templateUrl: "/views/checkoutSummary.html"
